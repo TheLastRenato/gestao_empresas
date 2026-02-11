@@ -1,0 +1,40 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Altura total da viewport */
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.center {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco para o container */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.textExcluir {
+    font-size: 16px; /* Tamanho da fonte */
+    margin-top: 10px; /* Espaço abaixo do texto */
+}
+
+.textVoltar{
+    margin-top: 30px;
+}
+
+.textVoltar a {
+    color: #ffffff; /* Texto branco */
+    background-color: orange; /* Fundo laranja */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.textVoltar a:hover {
+    opacity: 0.9;
+}

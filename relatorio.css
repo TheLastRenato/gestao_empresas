@@ -1,0 +1,72 @@
+/* Estilos globais */
+body {
+    background-color: rgb(190, 190, 190); /* Cor de fundo cinza claro */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+/* Container principal */
+.container {
+    display: flex; /* Usar flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start; /* Alinha no topo */
+    min-height: 100vh; /* Permite que o conteúdo se expanda */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2{
+    text-align: center;
+    color: orange;
+}
+
+/* Estilo do container de relatórios */
+.relatorios-container {
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra nos cantos */
+    padding: 20px; /* Espaçamento interno */
+    width: 90%; /* Largura responsiva */
+    max-width: 1100px; /* Largura máxima */
+    margin: 20px auto; /* Centraliza o container */
+}
+
+/* Estilo das tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços entre as bordas */
+    margin-bottom: 10px; /* Espaçamento superior */
+    background-color: #fff; /* Fundo branco para a tabela */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Evita que o conteúdo saia do container */
+}
+
+/* Estilo das células da tabela */
+th, td {
+    border: 1px solid rgb(190, 190, 190); /* Borda das células */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    max-width: 150px; /* Largura máxima para as células */
+    overflow: hidden; /* Evita que o conteúdo saia do container */
+    text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+/* Estilo dos cabeçalhos da tabela */
+th {
+    background-color: orange; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    table {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    th, td {
+        max-width: 100px; /* Ajusta a largura máxima em telas menores */
+    }
+}

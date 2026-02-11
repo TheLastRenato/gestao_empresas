@@ -1,0 +1,66 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fundo cinza claro */
+    color: #333; /* Texto cinza escuro */
+}
+
+.container{
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.center {
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff; /* Fundo branco para o container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.center h1 {
+    color: orange; /* Laranja */
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ccc; /* Linha cinza clara */
+}
+
+th {
+    background-color: orange; /* Laranja */
+    color: white; /* Texto branco */
+}
+
+button {
+    background-color: orange; /* Laranja */
+    color: white; /* Texto branco */
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+form {
+    display: inline; /* Para que o botão de excluir fique na mesma linha que o link de editar */
+}

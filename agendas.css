@@ -1,0 +1,66 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    color: #333; /* Cor do texto */
+}
+
+.container {
+    max-width: 600px; /* Largura máxima do container */
+    margin: 50px auto; /* Centraliza o container */
+    padding: 20px;
+    background-color: #fff; /* Fundo branco para o formulário */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.titulo {
+    text-align: center; /* Centraliza o título */
+    color: orange; /* Laranja */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+label {
+    display: block; /* Faz o label ocupar toda a largura */
+    margin-bottom: 5px; /* Espaço abaixo do label */
+}
+
+input[type="text"],
+input[type="datetime-local"],
+select{
+    width: 100%; /* Largura total do input */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaço abaixo do input */
+    border: 1px solid orange; /* Borda cinza clara */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+input[type="text"]:focus,
+input[type="datetime-local"]:focus,
+select:focus{
+    border-color: orange; /* Borda laranja ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+button {
+    width: 100%; /* Largura total do botão */
+    padding: 10px; /* Espaçamento interno */
+    background-color: orange; /* Fundo laranja */
+    color: #fff; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+button:hover {
+    opacity: 0.9;
+}

@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(190, 190, 190);
+}
+
+/*sidebar*/
+
+.sidebar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex; /* Adicionado para usar flexbox */
+    flex-direction: column;
+    width: 100px;
+    background: orange;
+    transition: 0.4s;
+}
+
+.header{
+    height: 72px;
+    padding: 0 20px 0 8px;
+    background-color: rgb(218, 142, 0);
+}
+
+.header img{
+    height: 24px;
+    margin-left: 14px;
+}
+
+.sidebar p{
+    position: absolute;
+    margin-left: 100px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.header h1, .sidebar a{
+    position: relative; /* Alterado de absolute para relative */
+    margin: 0;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.header h1{
+    top: 30px;
+    left: 100px;
+    position: absolute; /* Mantido como absolute para o h1 específico */
+}
+
+.sidebar:hover{
+    width: 250px;
+}
+
+/* Container para os links regulares */
+.links {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto; /* Permite rolagem se tiver muitos links */
+}
+
+/* Estilo comum para todos os links */
+.sidebar a{
+    color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 24;
+    padding: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.sidebar a:hover{
+    background-color: rgb(218, 142, 0);
+    transition: 0.7s;
+}
+
+/* Estilo específico para o logout */
+.sidebar a.logout {
+    margin-top: auto; /* Empurra para o fim do container */
+    border-top: 2px solid rgb(218, 142, 0);
+}
+
+.img-aluno, .img-veiculo, .img-agendamento, .img-relatorio{
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+}
+
+.img-instrutor{
+    margin-left: 5px;
+    width: 70px;
+    height: 40px;
+}
+
+.img-logout{
+    width: 45px;
+    height: 45px;
+    margin-left: 15px;
+}

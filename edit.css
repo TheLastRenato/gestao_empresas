@@ -1,0 +1,52 @@
+body {
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+}
+
+.container {
+    display: flex; /* Usar flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da tela */
+}
+
+.center {
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra nos cantos */
+    padding: 20px; /* Espaçamento interno */
+    width: 90%; /* Largura responsiva */
+    max-width: 500px; /* Largura máxima */
+}
+
+h2 {
+    text-align: center; /* Centraliza o título */
+    color: orange; /* Cor laranja */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.form-label {
+    color: #333; /* Cor do texto das labels */
+    margin-bottom: 5px; /* Espaçamento inferior das labels */
+    display: block; /* Faz as labels ocuparem toda a largura */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="mail"] {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    border: 2px solid orange; /* Borda laranja */
+    border-radius: 4px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="mail"]:focus {
+    border-color: #ff4500; /* Laranja mais escuro ao focar */
+    box-shadow: 0 0 5px rgba(255, 69, 0, 0.5); /* Sombra ao focar */
+}

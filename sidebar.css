@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(190, 190, 190);
+}
+
+.sidebar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    flex-direction: column;
+    width: 100px;
+    background: orange;
+    transition: 0.4s;
+}
+
+
+.header{
+    height: 72px;
+    padding: 0 20px 0 8px;
+    background-color: rgb(218, 142, 0);
+}
+
+.header img{
+        height: 24px;
+        margin-left: 14px;
+}
+.header h1, .sidebar a{
+    position: absolute;
+    margin: 0;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.header h1{
+    top: 30px;
+    left: 100px;
+}
+
+.sidebar p{
+    position: absolute;
+    margin-left: 100px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+
+.sidebar:hover{
+    width: 250px;
+}
+
+.sidebar a{
+    color: black;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    width: 90%;
+    margin-left: 10px;
+    font-size: 24;
+    border-radius: 6px;
+    padding: 0 0 0 16px;
+    cursor: pointer;
+}
+
+.sidebar a:hover{
+    background-color: rgb(218, 142, 0);
+    transition: 0.7s;
+}
+
+.img-aluno, .img-veiculo, .img-agendamento, .img-relatorio, .img-logout{
+    width: 45px;
+    height: 45px;
+}
+
+.img-instrutor{
+    margin-left: -6px;
+    width: 70px;
+    height: 40px;
+}
